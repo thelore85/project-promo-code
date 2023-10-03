@@ -12,32 +12,6 @@ import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 
 
-///////////////////////////////////////////
-//// ------ my app - SERVER CONNECTION
-//////////////////////////////////////////
-
-// export let serverUrl;
-// const serverPort = 3000;  // use the same port of the server
-// const serverPath = '/project-promo-code' // place here your project path
-// const serverAdress = 'https://piqus.it/';
-// const serverLive = `${serverAdress}${serverPath}`;
-// const serverLocal = `http://localhost:${serverPort}${serverPath}`
-
-
-// const  appEnv = process.env.NODE_ENV || 'development';
-// const serverUrlbuilder = () => {
-//   if(appEnv === 'development' ){
-//     serverUrl = serverLocal
-//     console.log(serverUrl)
-//   }else{
-//     serverUrl = serverLive
-//     console.log(serverUrl)
-//   }
-// };
-// serverUrlbuilder();
-
-
-
 
 
 

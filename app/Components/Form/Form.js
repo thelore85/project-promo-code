@@ -2,6 +2,31 @@
 
 import React, {useState} from 'react';
 
+/////////////////////////////////////////
+// ------ my app - SERVER CONNECTION
+////////////////////////////////////////
+
+export let serverUrl;
+const serverPort = 9000;  // use the same port of the server
+const serverPath = '/project-promo-code' // place here your project path
+const serverAdress = 'https://server-piqus.vercel.app';
+const serverLive = `${serverAdress}${serverPath}`;
+const serverLocal = `http://localhost:${serverPort}${serverPath}`
+
+
+const  appEnv = process.env.NODE_ENV || 'development';
+const serverUrlbuilder = () => {
+  if(appEnv === 'development' ){
+    serverUrl = serverLocal
+    console.log(serverUrl)
+  }else{
+    serverUrl = serverLive
+    console.log(serverUrl)
+  }
+};
+serverUrlbuilder();
+
+
 
 export default function Form() {
 
@@ -11,7 +36,10 @@ export default function Form() {
 
  // send data to server
 const addLead = () => {
-  fetch('http://localhost:9000/project-promo-code/new-lead',   {
+
+  console.log(`${serverUrl}/new-lead`)
+
+  fetch(`${serverUrl}/new-lead`,   {
     method: 'post',
     headers: {'Content-Type' : 'application/json'},
     body: JSON.stringify({
