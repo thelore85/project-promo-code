@@ -27,7 +27,6 @@ const serverUrlbuilder = () => {
 serverUrlbuilder();
 
 
-
 /////////////////////////////////////////
 //// COMPONENT FUNCTION
 
@@ -57,12 +56,32 @@ const addLead = () => {
     .then(res => {  
       console.log(res)
     
-      if( res.error) { setLeadStatus(false)}
-      else{ setLeadStatus(true)}
+      if(res.error) { 
+        setLeadStatus(false)
+      }else{ 
+        setLeadStatus(true)
+        sendPromoEmail();
+      }
     
     })
-  } else { console.log('Insert a valid name and email') }
+  } else { setLeadStatus(false) }
 };
+
+const sendPromoEmail = () => {
+
+  fetch(`${serverUrl}/email-code`, {
+    method: 'post',
+    headers: {'Content-Type' : 'application/json'},
+    body: JSON.stringify({
+      firstname: firstname ,
+      email: email,
+      promo_code: 'TEST0',
+      company: 'Piqus'
+    })
+  })
+  .then(res => res.json())
+  .then(res => {  console.log('email server resp: ', res) })
+}
 
 const hideEl = () => {
   setLeadStatus('pending')
@@ -100,8 +119,8 @@ const hideEl = () => {
                   
               {
                 leadStatus === 'pending' ? null : ( !leadStatus ? (
-                  <div className="fixed-bottom w-25  m-5 alert alert-warning alert-dismissible fade show mt-3 " role="alert" onClick={hideEl}>
-                    <strong>Opearazione fallita</strong> <p>Riprova con un&#39;altra email</p>
+                  <div className="fixed-bottom w-25  m-5 alert alert-danger alert-dismissible fade show mt-3 " role="alert" onClick={hideEl}>
+                    <strong>Controlla i dati</strong> <p>Usa un&#39;altra email o ricontrolla i dati inseriti.</p>
                     <button type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                   </div>
                   ) : (
