@@ -102,12 +102,12 @@ const hideEl = () => {
                 leadStatus === 'pending' ? null : ( !leadStatus ? (
                   <div className="fixed-bottom w-25  m-5 alert alert-warning alert-dismissible fade show mt-3 " role="alert" onClick={hideEl}>
                     <strong>Opearazione fallita!</strong> Riprova con un'altra email!
-                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    <button type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                   </div>
                   ) : (
                     <div className="fixed-bottom w-25 m-5 alert alert-success alert-dismissible fade show mt-3 " role="alert" onClick={hideEl}>
                       <strong>Apli la tua Email!</strong> Troverai il codice sconto
-                      <button type="button" class="btn-close " data-bs-dismiss="alert" aria-label="Close"></button>
+                      <button type="button" className="btn-close " data-bs-dismiss="alert" aria-label="Close"></button>
                     </div>
                   ))
               }
