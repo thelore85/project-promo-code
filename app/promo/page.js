@@ -1,7 +1,6 @@
 
 import Hero from '@/app/Components/Hero/Hero.js'
-import Form from './Components/Form/Form'
-
+import Form from '../Components/Form/Form.js'
 
 export default function Home() {
   return (
@@ -9,5 +8,6 @@ export default function Home() {
           <Hero />
           <Form />
         </>
+
   )
 }
