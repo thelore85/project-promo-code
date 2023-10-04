@@ -14,7 +14,6 @@ const serverLive = `${serverAdress}${serverPath}`;
 const serverLocal = `http://localhost:${serverPort}${serverPath}`
 
 
-
 // server url builder
 const  appEnv = process.env.NODE_ENV || 'development';
 
@@ -29,7 +28,7 @@ serverUrlbuilder();
 
 
 
-///////////////////////////////////////////
+/////////////////////////////////////////
 //// COMPONENT FUNCTION
 
 export default function Form() {
@@ -63,7 +62,6 @@ const addLead = () => {
     
     })
   } else { console.log('Insert a valid name and email') }
-
 };
 
 const hideEl = () => {
