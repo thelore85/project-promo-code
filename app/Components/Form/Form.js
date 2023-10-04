@@ -50,7 +50,8 @@ const addLead = () => {
       body: JSON.stringify({
         firstname: firstname ,
         email: email,
-        promo_code: 'TEST0'
+        promo_code: 'TEST0',
+        company: 'Piqus'
       })
     })
     .then(res => res.json())
