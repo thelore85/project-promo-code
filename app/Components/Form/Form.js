@@ -101,7 +101,7 @@ const hideEl = () => {
               {
                 leadStatus === 'pending' ? null : ( !leadStatus ? (
                   <div className="fixed-bottom w-25  m-5 alert alert-warning alert-dismissible fade show mt-3 " role="alert" onClick={hideEl}>
-                    <strong>Opearazione fallita</strong> <p>Riprova con un'altra email</p>
+                    <strong>Opearazione fallita</strong> <p>Riprova con un&#39;altra email</p>
                     <button type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                   </div>
                   ) : (
