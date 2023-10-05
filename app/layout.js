@@ -20,8 +20,8 @@ const inter = Inter({ subsets: ['latin'] })
 
 // HEAD - metadata setting
 export const metadata = {
-  title: 'Get your free offer!',
-  description: 'Optain your offer subscribing the form!',
+  title: 'TOW - The Odd Wine',
+  description: 'Vino - Bistrot - Tapas',
 }
 
 // layout
