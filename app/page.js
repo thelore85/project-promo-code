@@ -1,12 +1,19 @@
 
 import Hero from '@/app/Components/Hero/Hero.js'
-import Form from './Components/Form/Form'
-
-import { redirect } from 'next/navigation';
-
+import Main from '../Components/Main/Main.js'
+import Form from '../Components/Form/Form.js'
+import Footer from '../Components/Footer/Footer.js'
+import Carousel from '../Components/Carousel/Carousel.js'
 
 export default function Home() {
- 
-    redirect('/promo')
+  return (
+        <>
+          <Hero />
+          <Main />
+          <Form />
+          <Carousel />
+          <Footer />
+        </>
 
+  )
 }

@@ -5,7 +5,7 @@ import Main from '../Components/Main/Main.js'
 import Footer from '../Components/Footer/Footer.js'
 import Carousel from '../Components/Carousel/Carousel.js'
 
-export default function Home() {
+export default function Promo() {
   return (
         <>
           <Hero />
