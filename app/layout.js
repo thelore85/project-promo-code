@@ -22,7 +22,16 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata = {
   title: 'TOW - The Odd Wine',
   description: 'Vino - Bistrot - Tapas',
-}
+  icons: {
+    icon: "/img/favicon.ico",
+    shortcut: "/img/favicon.ico",
+    apple: "/img/favicon.ico",
+    other: {
+      rel: "apple-touch-icon-precomposed",
+      url: "/img/favicon.ico",
+    },
+  },
+};
 
 // layout
 export default function RootLayout({ children }) {

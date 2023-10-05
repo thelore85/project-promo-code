@@ -1,0 +1,22 @@
+#termini {
+  padding: 4rem 2rem;
+  background-color: rgb(217, 217, 217);
+}
+
+
+#termini h1, #termini h2{
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+#termini h3{
+  font-size: 1rem;
+  margin-top: 2rem;
+  font-weight: bold;
+}
+
+#termini p, li{
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+
