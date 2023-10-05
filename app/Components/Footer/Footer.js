@@ -6,6 +6,10 @@ export default function Footer() {
     <section id='footer'>
       <div className="wrapper">
 
+      <div className="logo-container">
+        <img className="logo" alt="TOW" src="/img/logo.jpg"></img>
+      </div>
+
         <div className="footer-menu">
           <p>ADMIN - <a href="/privacy">PRIVACY POLICY</a> - <a href="/termini">TERMINI DEL SERVIZIO</a></p>
         </div>

@@ -12,6 +12,14 @@
   margin: auto;
 }
 
+#footer .logo-container img{
+  display: block;
+  width: 20rem;
+  text-align: center;
+  margin: 2rem auto;
+  max-width: 5rem;
+}
+
 #footer .footer-menu p{
   color: white;
   font-size: 0.8rem;
