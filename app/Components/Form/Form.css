@@ -1,0 +1,79 @@
+
+#form{
+  background: rgb(43, 45, 59);
+  background-image: url(/img/pattern-bg.jpg);
+  background-position: center;
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6rem 1rem;
+}
+
+
+#form .form-wrapper{
+  width: 100%;
+  max-width: 60rem;
+ 
+}
+
+#form .form-card{
+  padding: 2rem;
+  background-color: rgb(243, 243, 243);
+  border: 0px;
+  border-radius: 5px;
+  max-width: 30rem;
+  margin: auto;
+}
+
+
+#form .btn-black{
+  border-radius: 0px;
+  color: white;
+  letter-spacing: 3px;
+  font-size: 1rem;
+  background-color: black;
+}
+
+#form .btn-black:hover{
+  border-radius: 0px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.532);
+}
+
+#form .form-legal-line{
+  font-size: 0.6rem;
+  color: rgb(160, 160, 160);
+}
+
+#form .divider{
+  width:100%;
+  margin: 2rem auto;
+  max-width: 9rem;
+  border-top: solid white 2px;
+ }
+
+#form .info-container{
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 0rem 0rem;
+  margin-bottom: 2rem;
+
+}
+
+#form .info-container h3{
+  text-transform: uppercase;
+  font-size: 2rem;
+  line-height: 2.1rem;
+  letter-spacing: 5px;
+  font-weight: 600;
+}
+
+#form .info{
+  font-size: 0.8rem;
+  line-height: 0.9rem;
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}

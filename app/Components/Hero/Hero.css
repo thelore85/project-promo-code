@@ -1,0 +1,58 @@
+
+
+#hero{
+  background-image: url(/img/wine-shelf.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 80vh;
+}
+
+#hero .hero-wrapper{
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+}
+
+#hero .logo-container{
+  position: relative;
+  top: 1rem;
+  color: white;
+  width: auto;
+  max-width: 20rem;
+  text-align: center;
+  margin: auto;
+  max-width: 12rem;
+}
+
+#hero .logo-payoff{
+  color: white;
+  font-size: 1rem;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-weight: 200;
+}
+
+#hero .logo{
+  border-radius: 10rem;
+  width: 100%;
+  max-width: 15rem;
+  margin-bottom: 2rem;
+}
+
+#hero .brand{
+  font-size: 0.8rem;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  display: block;
+}
+
+
+#hero .icon{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-top: 3rem;
+  color: rgba(255, 255, 255, 0.601);
+  font-size: 2rem;
+}
