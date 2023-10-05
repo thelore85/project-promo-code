@@ -2,7 +2,6 @@
 
 import React, {useState} from 'react';
 import './Form.css'
-import '../Server/Server.js'
 
 /////////////////////////////////////////
 // ------ my app - SERVER CONNECTION
