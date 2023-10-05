@@ -9,8 +9,8 @@ export default function termini() {
   
       <h3>1. Definizioni</h3>
       <ul>
-          <li><strong>Titolare del Sito (Il Titolare):</strong> Rappresentato dalla partita IVA grflnz85c26f205o, il Titolare offre il servizio di creazione e gestione di landing page per la raccolta di dati di contatto degli Utenti.</li>
-          <li><strong>Il Brand/Servizio/Cliente Sponsorizzato (Il Brand/Servizio/Cliente):</strong> Il soggetto che sponsorizza la landing page e riceve i dati di contatto raccolti dagli Utenti.</li>
+          <li><strong>Titolare del Sito (Il Titolare):</strong> Rappresentato dalla partita IVA GRFLNZ85C26F205O, il Titolare offre il servizio di creazione e gestione di landing page per la raccolta di dati di contatto degli Utenti.</li>
+          <li><strong>Il Brand/servizio sponsorizzato (Il Cliente):</strong> Il soggetto che sponsorizza la landing page e che può attivare i contattatti raccolti dagli Utenti attraverso il titolare dei dati.</li>
           <li><strong>L&#39;Utente del Sito:</strong> Gli individui che interagiscono con la landing page e forniscono i propri dati di contatto in cambio di un codice sconto o di un&#39;altra offerta.</li>
       </ul>
   
