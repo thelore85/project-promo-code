@@ -118,12 +118,12 @@ const hideEl = () => {
               
           {
             leadStatus === 'pending' ? null : ( !leadStatus ? (
-              <div className="fixed-bottom w-25  m-5 alert alert-danger alert-dismissible fade show mt-3 " role="alert" onClick={hideEl}>
+              <div className="fixed-bottom w-md-25  m-5 alert alert-danger alert-dismissible fade show mt-3 " role="alert" onClick={hideEl}>
                 <strong>Controlla i dati</strong> <p>Usa un&#39;altra email o ricontrolla i dati inseriti.</p>
                 <button type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
               </div>
               ) : (
-                <div className="fixed-bottom w-25 m-5 alert alert-success alert-dismissible fade show mt-3 " role="alert" onClick={hideEl}>
+                <div className="fixed-bottom w-md-25 m-5 alert alert-success alert-dismissible fade show mt-3 " role="alert" onClick={hideEl}>
                   <strong>Apli la tua Email</strong> <p>Troverai il codice sconto</p>
                   <button type="button" className="btn-close " data-bs-dismiss="alert" aria-label="Close"></button>
                 </div>
