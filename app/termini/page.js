@@ -14,7 +14,7 @@ export default function termini() {
           <li><strong>L&#39;Utente del Sito:</strong> Gli individui che interagiscono con la landing page e forniscono i propri dati di contatto in cambio di un codice sconto o di un&#39;altra offerta.</li>
       </ul>
   
-      <h3>2. Oggetto del Servizio (&#34;Your Personal Promo&#34;)</h3>
+      <h3>2. Oggetto del Servizio (&#34;Piqus Lead&#34;)</h3>
       <p>Il Titolare offre una tecnologia proprietaria che permette di creare landing page in grado di raccogliere i dati di contatto degli Utenti. In cambio, gli Utenti riceveranno un codice sconto o un&#39;offerta personalizzata, studiata ad hoc per il Cliente.</p>
   
       <h3>3. Gestione dei Dati dell&#39;Utente</h3>
