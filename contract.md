@@ -8,6 +8,9 @@
 - **Lead o Contatti:** Un utente che compila il form di contatto.
 - **Il Servizio:** 'Piqus Lead'.
 
+
+
+
 ## Sottoscrizione del Contratto
 
 - Il seguente contratto regola il rapporto tra il titolare e il cliente in merito al servizio 'Piqus Lead'.
@@ -15,11 +18,14 @@
 - Attivando l'account, si considera sottoscritto il presente contratto.
 - Il presente contratto ha validità di 12 mesi e si rinnoverà automaticamente per mantenere continuità di servizio. Il cliente può interrompere la sua efficacia in qualsiasi momento inviando una mail a supporto@piqus.it o direttamente dalla piattaforma nel pannello di amministrazione.
 
+
 ## Descrizione del Servizio 'Piqus Lead'
 
 Il servizio 'Piqus Lead' prevede la creazione di landing page o strumenti web finalizzati alla generazione di contatti (lead).
 
-Modello di servizio 'a performance': quanto più il cliente genera lead, tanto più ha diritto ai servizi descritti nei "tear" di riferimento come descritto nel seguente contratto. Il modello di servizio si divide in 4 livelli: 'Tear Light', 'Tear Basic', 'Tear Premium', 'Tear Platinum'.
+**Modello di servizio 'a performance':** quanto più il cliente genera lead, tanto più ha diritto ai servizi descritti nei "tear" di riferimento come descritto nel seguente contratto. Il modello di servizio si divide in 4 livelli: 'Tear Light', 'Tear Basic', 'Tear Premium', 'Tear Platinum'.
+
+Per passare da un 'tear' a un altro, è necessario produrre un numero specifico di contatti validi attraverso il form. I contratti vengono considerati validi se l'invio eseguito dal CRM viene confermato e non rifiutato.
 
 Non è possibile sottoscriversi a un 'tear' pagando, pertanto non sono richiesti dati di pagamento o fatturazione per la generazione dell'account. Il servizio 'Piqus Lead' si attiva semplicemente con la creazione di un account dal sito 'www.lead.piqus.it'. Al cliente viene attribuito il 'Tear: Light' di default. Il cliente verrà contattato direttamente per raccogliere le informazioni necessarie a creare il materiale proposto nel 'Tear: Light'.
 
