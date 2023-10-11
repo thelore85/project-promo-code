@@ -1,0 +1,29 @@
+#contract {
+  padding: 4rem 2rem;
+  background-color: rgb(217, 217, 217);
+  min-height: 100vh;
+}
+
+
+#contract h1, #contract h2{
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: 800;
+}
+
+#contract h3{
+  font-size: 1.5rem;
+  margin-top: 3rem;
+  font-weight: 600;
+}
+
+#contract h4{
+  font-size: 1rem;
+  margin-top: 2rem;
+  font-weight: 600;
+}
+
+#contract p, #contract li{
+  font-size: 0.9rem;
+}
+

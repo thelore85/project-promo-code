@@ -29,14 +29,14 @@ export default function Home() {
 // TO DO LIST: DEVELOPING FEATURE
 
 
-// - DB: project_promo_user (userId - email - psw -  company - tear - contratto)
-// - DB: project_promo_code (promoId - email - promoCode - promo start - promo end)
-// - DB: project_promo_service (serviceId - email - service(eg: landing, blog, ...) - prezzo -  )
+// - DB: project_promo_account (accountId - accountName - name - lastName - email - phone - psw - n.leads - contratto)
+// - DB: project_promo_service (serviceId - email - service(eg: landing, blog, ...) - title - promoCode - promo start - promo end - prezzo - link - status(pending, Live, ...) - listname - clientname )
 
+// - APP: login feature (psw encripted, recupero psw, )
+// - APP: admin board - to manage service requests and status
 
 // - HS: verificare come 'pushare' i dati del db dentro HS in maniera automatica.
 // - HS: aggiungere campi contatto: citta' - settore - tipologia (consumatore, info, ...)
-// - APP: login feature (psw encripted, recupero psw, )
 
 
 
