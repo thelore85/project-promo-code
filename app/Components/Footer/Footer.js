@@ -11,7 +11,7 @@ export default function Footer() {
       </div>
 
         <div className="footer-menu">
-          <p>ADMIN - <a href="/privacy">PRIVACY POLICY</a> - <a href="/termini">TERMINI DEL SERVIZIO</a></p>
+          <p><a href="/contract">ADMIN</a> - <a href="/privacy">PRIVACY POLICY</a> - <a href="/termini">TERMINI DEL SERVIZIO</a></p>
         </div>
 
         <div className="legal-line">
