@@ -25,7 +25,7 @@ export default function page() {
       <h3>Descrizione del Servizio &#34;Piqus Lead&#34;</h3>
       <p>Il servizio &#34;Piqus Lead&#34; prevede la creazione di landing page o strumenti web finalizzati alla generazione di contatti (lead).</p>
       <p>Il servizio è composto da una parte a performance e una a pagamento. La parte a performance è regolata in livelli che dipendono da quanti contatti sono stati generati. La parte a pagamento segue il listino presente in questo congtratto</p>
-      <p><strong>Modello di servizio &#34;a performance&#34;:</strong> quanto più il cliente genera lead, tanto più ha diritto ai servizi descritti nei "livello" di riferimento come descritto nel seguente contratto.
+      <p><strong>Modello di servizio &#34;a performance&#34;:</strong> quanto più il cliente genera lead, tanto più ha diritto ai servizi descritti nei &#34;livello&#34; di riferimento come descritto nel seguente contratto.
       <br /> Il modello di servizio si divide in 4 livelli: &#34;livello Light&#34;, &#34;livello Basic&#34;, &#34;livello Premium&#34;, &#34;livello Platinum&#34;.</p>
       <p>Per passare da un &#34;livello&#34; a un altro, è necessario produrre un numero specifico di contatti validi attraverso il form. 
       <br />I contatti vengono considerati validi se l&#34;invio eseguito dal CRM viene confermato e non rifiutato.</p>
@@ -47,7 +47,7 @@ export default function page() {
 
       <h4>Livello Basic- fino a 3000 lead</h4>
       <ul>
-          <li>In aggiunta a quanto specificato nel "Livello Light"</li>
+          <li>In aggiunta a quanto specificato nel &#34;Livello Light&#34;</li>
           <li>2 landing page: design, sviluppo e messa online gratis della prima landing page promozionale. Versione standard (sezioni della pagina: header, promo message, form, footer)</li>
           <li>2 Mail promo: creatività e sviluppo mail promozionale da inviare alla lista</li>
           <li>2 Liste contatti personalizzate</li>
@@ -55,7 +55,7 @@ export default function page() {
 
       <h4>Livello Premium- fino a 6000 lead</h4>
       <ul>
-          <li>In aggiunta a quanto specificato nel "Livello Basic" -</li>
+          <li>In aggiunta a quanto specificato nel &#34;Livello Basic&#34;</li>
           <li>Sviluppo minisito: fino a 5 pagine (blog escluso)</li>
           <li>Landing page: design personalizzato fino a 10 sezioni oltre a sviluppo e messa online</li>
           <li>Promo code univoco: generazione di codice univoco per ogni lead.</li>
@@ -64,7 +64,7 @@ export default function page() {
 
       <h4>Livello Platinum - fino a 10.000 lead</h4>
       <ul>
-          <li>In aggiunta a quanto specificato nel "Livello Premium" -</li>
+          <li>In aggiunta a quanto specificato nel &#34;Livello Premium&#34; -</li>
           <li>1 minisito/una tantum: fino a 5 pagine</li>
           <li>1 blog/una tantum: con CMS dedicato;</li>
           <li>12 email/anno</li>
