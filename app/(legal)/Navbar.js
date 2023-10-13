@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCircleUp } from '@fortawesome/free-solid-svg-icons'
+import { faBook } from '@fortawesome/free-solid-svg-icons'
 
 import Link from 'next/link'
 
@@ -9,7 +9,9 @@ export default function Navbar() {
     <nav className="w-100 p-4">
       <div className="container d-flex align-items-center">
         <div className="logo text-light fs-2 me-4">
-          <FontAwesomeIcon icon={faCircleUp} />
+          <Link href="/">
+            <FontAwesomeIcon icon={faBook} />
+          </Link>
         </div>
         <div className="text-light">
           <Link href="/termini" className="me-5">Termini e Condizioni</Link>

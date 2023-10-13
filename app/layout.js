@@ -14,7 +14,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 // HEAD - metadata setting
 export const metadata = {
-  title: 'Your promo page made easy',
+  title: 'PIQUS LEAD - Spread your promo to the world',
   description: 'Create your promotion landing page and generate discount code!',
   icons: { icon: "/img/favicon.ico", shortcut: "/img/favicon.ico", apple: "/img/favicon.ico", other: { rel: "apple-touch-icon-precomposed", url: "/img/favicon.ico", }, },
 };
