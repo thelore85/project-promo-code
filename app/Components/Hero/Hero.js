@@ -9,7 +9,7 @@ export default function Home() {
     <div className="hero-wrapper">
       
       <div className="logo-container">
-        <img className="logo" alt="TOW" src="/img/logo.jpg"></img>
+        <img className="logo" alt="TOW" src="/img/tow/logo.jpg"></img>
       </div>
       <div className="icon">
         <span className='brand'>the odd wine</span>

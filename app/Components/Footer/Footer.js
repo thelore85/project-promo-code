@@ -7,11 +7,11 @@ export default function Footer() {
       <div className="wrapper">
 
       <div className="logo-container">
-        <img className="logo" alt="TOW" src="/img/logo.jpg"></img>
+        <img className="logo" alt="TOW" src="/img/tow/logo.jpg"></img>
       </div>
 
         <div className="footer-menu">
-          <p><a href="/contract">ADMIN</a> - <a href="/privacy">PRIVACY POLICY</a> - <a href="/termini">TERMINI DEL SERVIZIO</a></p>
+          <p><a href="/admin">ADMIN</a> - <a href="/privacy">PRIVACY POLICY</a> - <a href="/termini">TERMINI DEL SERVIZIO</a></p>
         </div>
 
         <div className="legal-line">

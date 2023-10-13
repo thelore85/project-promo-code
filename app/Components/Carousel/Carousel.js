@@ -6,10 +6,10 @@ export default function Carousel() {
     <section id="carousel">
       <div className="wrapper">
 
-        <img src='/img/amarone.jpg'></img>
-        <img src='/img/cariola.jpg'></img>
-        <img src='/img/pasqual.jpg'></img>
-        <img src='/img/arancio.jpg'></img>
+        <img src='/img/tow/amarone.jpg'></img>
+        <img src='/img/tow/cariola.jpg'></img>
+        <img src='/img/tow/pasqual.jpg'></img>
+        <img src='/img/tow/arancio.jpg'></img>
         
       </div>
     </section>
