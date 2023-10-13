@@ -6,19 +6,20 @@
 
 
 #contract h1, #contract h2{
-  font-size: 2rem;
+  font-size: 3rem;
   margin-bottom: 2rem;
   font-weight: 800;
 }
 
 #contract h3{
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   margin-top: 3rem;
   font-weight: 600;
+  text-decoration: underline;
 }
 
 #contract h4{
-  font-size: 1rem;
+  font-size: 1.4rem;
   margin-top: 2rem;
   font-weight: 600;
 }

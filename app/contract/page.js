@@ -24,7 +24,8 @@ export default function page() {
 
       <h3>Descrizione del Servizio &#34;Piqus Lead&#34;</h3>
       <p>Il servizio &#34;Piqus Lead&#34; prevede la creazione di landing page o strumenti web finalizzati alla generazione di contatti (lead).</p>
-      <p>Il servizio è composto da una parte a performance e una a pagamento. La parte a performance è regolata in livelli che dipendono da quanti contatti sono stati generati. La parte a pagamento segue il listino presente in questo congtratto</p>
+      <p>Il servizio è composto da una parte a performance e una a pagamento. La parte a performance è regolata in livelli che dipendono da quanti contatti sono stati generati dal cliente attraverso la/le landing page. 
+      <br />La parte a pagamento segue il listino presente nell'ultima sezine di questo congtratto</p>
       <p><strong>Modello di servizio &#34;a performance&#34;:</strong> quanto più il cliente genera lead, tanto più ha diritto ai servizi descritti nei &#34;livello&#34; di riferimento come descritto nel seguente contratto.
       <br /> Il modello di servizio si divide in 4 livelli: &#34;livello Light&#34;, &#34;livello Basic&#34;, &#34;livello Premium&#34;, &#34;livello Platinum&#34;.</p>
       <p>Per passare da un &#34;livello&#34; a un altro, è necessario produrre un numero specifico di contatti validi attraverso il form. 
@@ -36,7 +37,7 @@ export default function page() {
 
       <h4>Livello Light - fino a 1000 lead</h4>
       <ul>
-          <li>Landing Page: design e sviluppo dedivato di una pagina promozionale standard. (servizio in promozione)</li>
+          <li>Landing Page: design e sviluppo dedicato di una pagina promozionale standard.</li>
           <li>Codice Promo: generazione codice promo univoco dedicato al cliente</li>
           <li>Lista Contatti: creazione di una lista di contatti dedicata al cliente</li>
           <li>Email automatica: personalizzazione mail di risposta all&#34;utente, anche con codice promo</li>
