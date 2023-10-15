@@ -1,7 +1,7 @@
 
 export default function pricacy() {
   return (
-    <main id='privacy' className='privacy'>
+    <main id='privacy' className='privacy legal'>
       <div className="container">
 
         <h1>Privacy Policy</h1>

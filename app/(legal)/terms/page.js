@@ -3,7 +3,7 @@ export default function termini() {
   
   return (
 
-    <main id="termini">
+    <main id="termini" className="legal">
 
       <div className="container">
           <h1>Termini del Servizio</h1>

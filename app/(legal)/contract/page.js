@@ -1,8 +1,8 @@
-
-
 export default function page() {
   return (
-    <main id="contract">
+
+    
+    <main id="contract" className="legal">
       <div className="container">
 
         <h1>Contratto di Servizio Piqus Lead</h1>

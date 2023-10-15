@@ -1,7 +1,26 @@
+'use client'
+
+import FormAuth from '@/app/(auth)/Components/FormAuth.js'
+
 export default function Login() {
+
+  const formTitle = "Accedi"
+
+  const handleSubmit = async ( e, email, password ) => {
+    e.preventDefault()
+    console.log('Login: ', email, password)
+  }
+
   return (
-    <main className="">
-      <h2 className="">Log in</h2>
-    </main>
+    <section className="w-100 h-75 py-3 d-flex justify-content-center align-items-center">
+      <div className="container" style={{'max-width':'500px'}}>
+
+      <FormAuth 
+        title = {formTitle} 
+        handleSubmit= {handleSubmit}  
+      />        
+
+      </div>
+    </section>
   )
 }
