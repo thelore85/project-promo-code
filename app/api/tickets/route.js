@@ -1,30 +1,27 @@
+import { createRouteHandlerClient } from '@supabase/auth-helpers-nextjs'
 import {NextResponse} from 'next/server'
+import { cookies } from 'next/headers'
 
 export const dynamic = 'force-dynamic' // force db refrech
 
 
-export async function GET(){
-  const response = await fetch('http://localhost:4000/tickets')
-  
-  const tickets = await response.json()
-
-  return NextResponse.json(tickets, {
-    status: 200
-  })
-}
-
 export async function POST(request) {
-  const ticketBody = await request.json()
+  const tickets = await request.json()
+  console.log('request received')
 
-  const res = await fetch('http://localhost:4000/tickets', {
-    method: 'POST',
-    headers: { 'content-type' : 'application/json'},
-    body: JSON.stringyfy(ticketBody)
-  })
+  // get supabase instance
+  const supabase = createRouteHandlerClient({cookies})
 
-  const newTicket = await res.json()
+  // get the current user session
+  const {data: {session}} = await supabase.auth.getSession()
 
-  return NextResponse.json(newTicket, {
-    status: 201
-  })
+  // insert the data in supabase
+  const {data, error} = await supabase.from('pj_promo_service')
+  .insert({
+    ...tickets, // get all info from the form 
+    user_email: session.user.email}) // add the session info above
+    .select() // ask back the obj from the DB
+    .single() // make it an obj (not an array [{ tiket }])
+
+  return NextResponse.json({data, error}) // send back data to the api call
 }
