@@ -2,34 +2,30 @@ import { cookies } from 'next/headers'
 import { createServerComponentClient } from '@supabase/auth-helpers-nextjs'
 import { redirect } from 'next/navigation'
 
-// components
-import Navbar from '../Components/Navbar/Navbar'
-import Footer from '../Components/Footer/Footer'
-import Link from 'next/link'
+export const dynamic = 'force-dynamic'; // force realtime update
 
+// components
+import Footer from '../Components/Footer/Footer'
+import NavbarLogIn from '../Components/Navbar/NavbarLogIn'
+
+
+// layout template
 export default async function layout({children}) {
 
-    //protect the page from non logged-in users
-    const supabase = createServerComponentClient({ cookies })
+    const supabase = createServerComponentClient({ cookies })     //protect the page from non logged-in users
     const { data } = await supabase.auth.getSession()
   
     if(!data.session){ redirect('/') }
 
   return (
-    <>
-      <Navbar/>
-      <div className="min-vh-100 row">
-        <div className="col-2 p-4 min-vh-100 bg-secondary-subtle">
-          <p className="fs-4 fw-bolder">Ticket options</p>
-          <Link className=" d-block" href="/tickets">All tickets</Link>
-          <Link className=" d-block" href="/tickets/create">Create tickets</Link>
-        </div>
-
-        <div className="col-10 px-5 py-4">
-          {children}
-        </div>
+  
+    <div className="">
+      <NavbarLogIn />
+      <div className=" min-vh-100 container py-5">
+        {children}
       </div>
       <Footer/>
-    </>
+    </div>
+
   )
 }

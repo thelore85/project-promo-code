@@ -4,6 +4,8 @@ import { createClientComponentClient } from '@supabase/auth-helpers-nextjs'
 import { useRouter } from 'next/navigation'
 import React from 'react'
 
+export const dynamic = 'force-dynamic'
+
 //component function
 export default function LogoutButton({ textButton, user }) {
   
@@ -13,7 +15,8 @@ export default function LogoutButton({ textButton, user }) {
     const supabase = createClientComponentClient()
     const { error } = await supabase.auth.signOut()
 
-    if(!error){ router.push('/login') }
+    if(!error){
+      router.push('/login') }
     if(error){ console.log('logOut error: ', error)}
   }
   

@@ -3,7 +3,10 @@
 import { useRouter } from "next/navigation"
 import { useState } from "react"
 
-export default function CreateTicketForm({ formTitle }) {
+
+
+//component
+export default function CreateTicketForm({ formTitle, user_id }) {
   const router = useRouter()
 
   const [title, setTitle] = useState('')
@@ -30,7 +33,7 @@ export default function CreateTicketForm({ formTitle }) {
     if(json.error){console.log('Error - ticket form: ',json.error)}
     if(json.data){
       router.refresh()
-      router.push('/tickets')
+      router.push(`/dashboard/users/${user_id}`)
     }
 
   }
@@ -38,7 +41,6 @@ export default function CreateTicketForm({ formTitle }) {
   return (
 
     <>
-
     <h2>{formTitle}</h2>
 
     <form onSubmit={handleSubmit} className="w-100" style={{'maxWidth':'500px'}}>
@@ -70,7 +72,6 @@ export default function CreateTicketForm({ formTitle }) {
       </button>
       <p className="mt-5 mb-3 text-body-secondary">Piqus Lead © 2017–2024</p>
     </form>
-
     </>
    
   )

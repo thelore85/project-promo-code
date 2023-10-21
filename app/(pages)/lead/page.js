@@ -2,7 +2,10 @@ import Link from 'next/link'
 
 // comeponents
 import Footer from '@/app/Components/Footer/Footer'
-import Navbar from '@/app/Components/Navbar/Navbar'
+import Navbar from '@/app/Components/Navbar/Navbar';
+
+
+export const dynamic = 'force-dynamic';
 
 export const metadata = {
   title: 'Crea la tua promo online, gratis! - PIQUS LEAD',
@@ -14,8 +17,8 @@ export default async function lead() {
 
   return (
     <>
-      <Navbar />
-        <main className="container h-75 p-5 text-center  d-flex justify-content-center align-items-center ">
+        <Navbar />
+        <main className="container h-75 p-5 text-center d-flex justify-content-center align-items-center ">
           <div>
             <h1 className=" fw-bolder ">Realizziamo promozioni per i tuoi clienti</h1>
             <p className=" fs-5">Aumenta le tue vendite con una promozione offline o online.

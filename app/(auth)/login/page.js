@@ -1,7 +1,7 @@
 'use client'
-
 import { useState } from 'react'
 import { createClientComponentClient } from '@supabase/auth-helpers-nextjs'
+
 
 
 //components
@@ -27,7 +27,10 @@ export default function Login() {
     })
 
     if(error){ setErrorLogin(error.message) }
-    if(!error){ router.push('/tickets') }
+    if(!error){ 
+      router.refresh();
+      router.push('/dashboard/users') 
+    }
   }
 
   return (
