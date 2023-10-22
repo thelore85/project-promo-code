@@ -17,34 +17,31 @@ export default function NavbarLogOut() {
   return (
 
     <nav className="navbar navbar-expand-lg bg-body-tertiary rounded" aria-label="Eleventh navbar example">
-      <div className="container">
-        <Link className="navbar-brand fs-4" href="/"><FontAwesomeIcon icon={faLaptopCode} className="text-primary rounded me-3"/> PIQUS</Link>
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
-        </button>
+      <div className="container d-flex">
 
-        <div className="collapse navbar-collapse" id="navbarsExample09">
-          <ul className="navbar-nav m-auto mb-2 mb-lg-0">
+        <div className='me-4'>
+          <Link className="navbar-brand fs-4" href="/"><FontAwesomeIcon icon={faLaptopCode} className="text-primary rounded me-3"/> PIQUS</Link>
+          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon"></span>
+          </button>
+        </div>
+
+        <div className="collapse navbar-collapse me-auto" id="navbarsExample09">
+          <ul className="navbar-nav mb-2 mb-lg-0">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">Home</a>
+              <Link className="nav-link active" aria-current="page" href="#">Pricing</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Link</a>
+              <Link className="nav-link active" aria-current="page" href="#">Services</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link disabled" aria-disabled="true">Disabled</a>
-            </li>
-            <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
-              <ul className="dropdown-menu">
-                <li><a className="dropdown-item" href="#">Action</a></li>
-                <li><a className="dropdown-item" href="#">Another action</a></li>
-                <li><a className="dropdown-item" href="#">Something else here</a></li>
-              </ul>
+              <Link className="nav-link active" aria-current="page" href="#">Contacts</Link>
             </li>
           </ul>
-          <LoginButtons />
         </div>
+        
+        <LoginButtons />
+
       </div>
     </nav>
 

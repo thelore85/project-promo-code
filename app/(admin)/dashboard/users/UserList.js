@@ -44,7 +44,7 @@ export default async function UsersList() {
       const dateOption = { year: 'numeric', month: '2-digit', day: '2-digit' };
       
       return (
-        <div key={user.id} className="p-3 mb-2 ">
+        <div key={user.id} className="p-3x mb-2 ">
         
           <div className="d-flex text-body-secondary pt-3">
             <div className="bg-primary-subtle p-1 me-3 rounded"></div>

@@ -14,10 +14,10 @@ export default async function Navbar() {
 
   return (
     
-      <div className="container-fluid">
+      <div className="">
 
          { data?.session?.user.email ? //check user session from supabase
-          (<NavbarLogIn user={data.session.user.email}/>): 
+          (<NavbarLogIn session={data.session}/>): 
           (<NavbarLogOut />)
          }
 

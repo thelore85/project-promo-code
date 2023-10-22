@@ -18,7 +18,7 @@ async function getTickets() {
 }
 
 
-const userCounter = async () => {
+const usersCounter = async () => {
   const ticket = await getTickets();
   const usersList = ticket.map(object => object.user_id);
   const finalList = [];
@@ -32,13 +32,11 @@ const userCounter = async () => {
 }
 
 
-
-
 // page
 export default async function dashboard() {
 
   const tickets = await getTickets()
-  const users = await userCounter()
+  const users = await usersCounter()
 
 
   return (
@@ -52,7 +50,7 @@ export default async function dashboard() {
             <div className="lh-1 bg-success rounded p-3 d-flex align-items-center">
              <FontAwesomeIcon icon={faRectangleAd} className="h2 me-3"/>
               <div className="me-auto pe-2">
-                <h1 className="h5 mb-1 lh-1">Active Tickets</h1>
+                <h1 className="h5 mb-1 lh-1">All Tickets</h1>
                 <small>Lista di tutte le attività pianificate</small>
               </div>
               <div className="rounded bg-white text-black-50 p-3">
@@ -99,8 +97,9 @@ export default async function dashboard() {
           </Link>
 
         </div>
-
       </div>
+
+
     </div>
   )
 }
