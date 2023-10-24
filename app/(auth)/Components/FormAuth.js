@@ -24,7 +24,7 @@ export default function Register({ title, handleSubmit }){
 
           <button className="btn btn-primary w-100 py-2" >Invia</button>
 
-          <p className="mt-5 mb-3 text-black-50 fst-italic" style={{ 'fontSize' : '11px'}} >Cliccando 'invia' accetti i termini e condizionio e la informatica pricacy presente a margine del sito. Per maggiori informazioni visita la sezione legale di piqus.it</p>
+          <p className="mt-5 mb-3 text-black-50 fst-italic" style={{ 'fontSize' : '11px'}} >Cliccando &#39invia&#39 accetti i termini e condizionio e la informatica pricacy presente a margine del sito. Per maggiori informazioni visita la sezione legale di piqus.it</p>
 
         </form>
   )
