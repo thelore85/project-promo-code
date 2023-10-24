@@ -13,7 +13,7 @@ export default  async function Avatar() {
 
   const session = data.session
 
-  console.log('avatar debugging: / ',  session)
+  console.log('avatar debugging: / ',  session.user.id)
 
   return (
     <div className="dropdown">
