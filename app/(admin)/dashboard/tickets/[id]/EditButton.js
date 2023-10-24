@@ -22,6 +22,4 @@ export default function EditButton({id}) {
       : (<span className='btn btn-light border-primary text-primary'>Edit</span>) }
     </Link>
   )
-
-
 }

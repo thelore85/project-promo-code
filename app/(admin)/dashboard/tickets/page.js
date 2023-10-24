@@ -1,10 +1,11 @@
+
 import { cookies } from 'next/headers'
 import { createServerComponentClient } from '@supabase/auth-helpers-nextjs'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faRectangleAd } from '@fortawesome/free-solid-svg-icons'
 
 // components
-import TicketsList from './TicketsList'
+import TktList from './TktList'
 
 
 
@@ -23,6 +24,8 @@ export default async function tickets() {
 
   const tickets = await getTickets() // get the array from DB
 
+
+
   return (
 
       <>
@@ -35,7 +38,7 @@ export default async function tickets() {
         </div>
 
         <div className="bg-white rounded">
-        <TicketsList tickets={tickets} />
+          <TktList tickets={tickets} />
         </div>
       </>
       

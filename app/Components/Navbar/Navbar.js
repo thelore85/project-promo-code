@@ -14,7 +14,7 @@ export default async function Navbar() {
 
   return (
     
-      <div className="">
+      <div>
 
          { data?.session?.user.email ? //check user session from supabase
           (<NavbarLogIn session={data.session}/>): 

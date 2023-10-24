@@ -10,7 +10,7 @@ export default function Register({ title, handleSubmit }){
   return (
         <form className="bg-white p-3 rounded" onSubmit={(e) => handleSubmit(e, email, password) }>
 
-          <h2 className="fs-1 text-center">{title}</h2>
+          <h1 className="h2 text-center p-3 fw-bold">{title}</h1>
 
           <div className="form-floating mb-3">
             <input type="email" required className="form-control" id="floatingEmail" placeholder="name@example.com" onChange={(e)=>{ setEmail(e.target.value)}} value={email}/>

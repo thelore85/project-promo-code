@@ -12,7 +12,7 @@ export default function Avatar({ session }) {
         <img src="/img/user_img.jpg" alt="mdo" width="32" height="32" className="rounded-circle" />
       </span>
       <ul className="dropdown-menu text-small">
-        <li><Link className="dropdown-item border-bottom text-primary" href={`/dashboard/users/${session?.user.id}`} >My Profile</Link></li>
+        <li><Link className="dropdown-item border-bottom text-primary" href={ session ? (`/dashboard/users/${session?.user.id}`) : '/#'} >My Profile</Link></li>
         <li><Link className="dropdown-item" href="/dashboard/tickets/create">Nuovo Progetto</Link></li>
         <li><Link className="dropdown-item" href="#">Cambia Password</Link></li>
         <li><Link className="dropdown-item" href="#">Supporto</Link></li>

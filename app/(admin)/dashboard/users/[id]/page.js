@@ -3,8 +3,8 @@ import { notFound } from "next/navigation"
 import { cookies } from 'next/headers'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUser } from '@fortawesome/free-solid-svg-icons'
-import TicketsList from "../../tickets/TicketsList"
 import Link from "next/link"
+import TktList from "../../tickets/TktList"
 
 
 // PAGE FUNCTION
@@ -55,7 +55,7 @@ export default async function userDetails({ params }) {
 
         <div className="col-md-9">
           <div className="bg-white rounded">
-            <TicketsList tickets={tickets} />
+            <TktList tickets={tickets} />
           </div>
         </div>
 

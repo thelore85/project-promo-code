@@ -3,7 +3,6 @@ import { useState } from 'react'
 import { createClientComponentClient } from '@supabase/auth-helpers-nextjs'
 
 
-
 //components
 import FormAuth from '@/app/(auth)/Components/FormAuth.js'
 import { useRouter } from 'next/navigation'
@@ -13,9 +12,6 @@ import { useRouter } from 'next/navigation'
 //page function
 export default function Login({ session }) {
 
-  console.log('login: ', session)
-
-  const formTitle = "Accedi"
   const [errorLogin, setErrorLogin] = useState('')
   const router = useRouter()
 
@@ -30,8 +26,6 @@ export default function Login({ session }) {
       password
     })
 
-    if(data){console.log('debugging login: ', data)}
-
     if(error){ setErrorLogin(error.message) }
     if(!error){ 
       router.refresh();
@@ -40,10 +34,10 @@ export default function Login({ session }) {
   }
 
   return (
-    <section className="w-100 h-75 py-3 d-flex justify-content-center align-items-center">
+    <section className="dark-bg w-100 h-75 py-3 d-flex justify-content-center align-items-center">
       <div className="container" style={{'maxWidth':'500px'}}>
 
-      <FormAuth title = {formTitle} handleSubmit= {handleSubmit} />
+      <FormAuth title = 'Log in' handleSubmit= {handleSubmit} />
       { errorLogin && <div className="p-2 bg-danger-subtle text-danger">{ errorLogin }</div>}    
 
       </div>

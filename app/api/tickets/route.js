@@ -7,7 +7,7 @@ export const dynamic = 'force-dynamic' // force db refrech
 
 export async function POST(request) {
   const tickets = await request.json()
-  console.log('api/tickets/ request received')
+  console.log('API REQUEST: api/tickets/')
 
   // get supabase instance
   const supabase = createRouteHandlerClient({cookies})

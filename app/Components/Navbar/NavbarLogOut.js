@@ -25,7 +25,7 @@ export default function NavbarLogOut() {
             <span className="navbar-toggler-icon"></span>
           </button>
         </div>
-
+{/* 
         <div className="collapse navbar-collapse me-auto" id="navbarsExample09">
           <ul className="navbar-nav mb-2 mb-lg-0">
             <li className="nav-item">
@@ -38,7 +38,7 @@ export default function NavbarLogOut() {
               <Link className="nav-link active" aria-current="page" href="#">Contacts</Link>
             </li>
           </ul>
-        </div>
+        </div> */}
         
         <LoginButtons />
 

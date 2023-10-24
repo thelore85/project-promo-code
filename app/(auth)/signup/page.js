@@ -12,7 +12,6 @@ export default function SignUp() {
 
   const [formError, setFormError] = useState('') //manage form error
   const router = useRouter();
-  const formTitle = "Crea un account" //set the form title
 
 
   ////////////////////////////////////////
@@ -21,7 +20,8 @@ export default function SignUp() {
     e.preventDefault() //don't reload the page
 
     const supabase = createClientComponentClient() //call the database API
-    const {error, data } = await supabase.auth.signUp({
+    const {error, data } = await supabase.auth
+    .signUp({
       email,
       password,
       option:{
@@ -29,21 +29,18 @@ export default function SignUp() {
       }
     })
 
-    if(error){ setFormError(error.message)}
-    if(!error){
-      console.log('signup page: user data: ', data.user)
-      router.push('/verify')
-    }
+    if(error){ setFormError(error.message); console.log(error.message)}
+    if(!error){ router.push('/verify') }
   }
 
   //////////////////////////////////////
   // Page html output
   return (
-    <section className="w-100 h-75 py-3 d-flex justify-content-center align-items-center">
+    <section className="dark-bg w-100 h-75 py-3 d-flex justify-content-center align-items-center">
       <div className="container" style={{'maxWidth':'500px'}}>
 
-      <FormAuth title = {formTitle}  handleSubmit= {handleSubmit} />
-      { formError && <div className="fs-6 p-3 bg-danger-subtle text-danger" >{formError}</div> }
+      <FormAuth title = 'Crea un account'  handleSubmit= {handleSubmit} />
+      { formError && <div className="fs-6 p-3 mt-2 rounded bg-danger-subtle text-danger" >{formError}</div> }
 
       </div>
     </section>

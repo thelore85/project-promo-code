@@ -13,8 +13,8 @@ export default async function create() {
   const id =  session.session.user.id;
 
   return (
-    <main>
-      <CreateTicketForm formTitle="Richiedi una promo" user_id={id}/>
-    </main>
+    <section className="d-flex align-content-center justify-content-center ">
+      <CreateTicketForm formTitle="Start a new project" user_id={id}/>
+    </section>
   )
 }
