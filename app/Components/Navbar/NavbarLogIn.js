@@ -1,9 +1,7 @@
-'use client'
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLaptopCode } from '@fortawesome/free-solid-svg-icons'
 import Link from 'next/link'
-import { useEffect} from 'react';
+// import { useEffect} from 'react';
 import Avatar from './Avatar';
 import DashboardMenu from './DashboardMenu';
 
@@ -12,12 +10,10 @@ import DashboardMenu from './DashboardMenu';
 
 export default function NavbarLogIn({session}) {
 
-    // import bootstrap 5 javascript
-    useEffect(() => {
-      require("bootstrap/dist/js/bootstrap.bundle.min.js");
-
-      
-    }, []);
+    // // import bootstrap 5 javascript
+    // useEffect(() => {
+    //   require("bootstrap/dist/js/bootstrap.bundle.min.js");
+    // }, []);
 
   return (
 

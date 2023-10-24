@@ -1,10 +1,19 @@
-
-
 import Link from "next/link"
 import LogoutButton from "./LogoutButton"
+import { cookies } from 'next/headers'
+import { createServerComponentClient } from '@supabase/auth-helpers-nextjs'
 
 
-export default function Avatar({ session }) {
+export default  async function Avatar() {
+
+
+
+  const supabase = createServerComponentClient({ cookies })
+  const { data } = await supabase.auth.getSession()
+
+  const session = data.session
+
+  console.log('avatar debugging: / ',  session)
 
   return (
     <div className="dropdown">
