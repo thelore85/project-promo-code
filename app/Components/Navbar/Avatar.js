@@ -1,19 +1,17 @@
+'use client'
+
 import Link from "next/link"
 import LogoutButton from "./LogoutButton"
-import { cookies } from 'next/headers'
-import { createServerComponentClient } from '@supabase/auth-helpers-nextjs'
+import { useEffect } from "react"
 
 
-export default  async function Avatar() {
+export default  async function Avatar({session}) {
 
 
-
-  const supabase = createServerComponentClient({ cookies })
-  const { data } = await supabase.auth.getSession()
-
-  const session = data.session
-
-  console.log('avatar debugging: / ',  session.user.id)
+    // import bootstrap 5 javascript
+    useEffect(() => {
+      require("bootstrap/dist/js/bootstrap.bundle.min.js");
+    }, []);
 
   return (
     <div className="dropdown">
