@@ -8,6 +8,7 @@ import Footer from '../Components/Footer/Footer'
 import NavbarLogIn from '../Components/Navbar/NavbarLogIn'
 
 
+
 // layout template
 export default async function layout({children}) {
 
