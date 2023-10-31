@@ -3,7 +3,6 @@ import { createServerComponentClient } from '@supabase/auth-helpers-nextjs'
 import { redirect } from 'next/navigation'
 export const dynamic = 'force-dynamic'; // force realtime update
 
-
 // components
 import Footer from '../Components/Footer/Footer'
 import NavbarLogIn from '../Components/Navbar/NavbarLogIn'
